@@ -1,0 +1,35 @@
+<html>
+    <header>
+        <link rel="stylesheet" href="playercss.css">
+    </header>
+    <body>
+        <div id="main">
+            <div id="song-artist">
+                <img id="coverart" src="/images/nirvana.webp"Main image" onerror="this.onerror=null; this.src='clear.png';">
+                <h1>Song name</h1>
+                <h2>Artist</h2>
+
+            </div>
+            <!--
+            <audio controls>
+                <source src="Stuff.ogg" type="audio/ogg">
+            </audio> --> 
+            <div id="playerrange">
+                <input type="range" id="progress" value="0" min="0" max="500">
+                <p></p>
+                <span id="time">0:00</span>
+            </div>
+            <div id="playercontrol">
+                <button id="backbutton">
+                    <img src="/images/back.png" alt="Back button">
+                </button>
+                <button id="playbutton">
+                    <img src="/images/play.png" alt="Play button">
+                </button>
+                <button id="skipbutton">
+                    <img src="/images/skip.png" alt="skip button">
+                </button>
+            </div>
+        </div>
+    </body>
+</html>
