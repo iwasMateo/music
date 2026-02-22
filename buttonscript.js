@@ -1,9 +1,8 @@
 let playbutton = document.getElementById("playbutton");
 let skipbutton = document.getElementById("skipbutton");
 let backbutton = document.getElementById("backbutton");
-let audioplayer = document.getElementById("audio");
 let playbuttonimg = playbutton.querySelector("img");
-var audio = new Audio(audioplayer.src);
+var audio = document.getElementById("audio");
 function switchPlay() {
     if (playbuttonimg.src.includes("images/pause.png")){
         playbuttonimg.src = "/images/play.png";

@@ -6,16 +6,19 @@
     <body>
         <div id="main">
             <div id="song-artist">
-                <img id="coverart" src="/images/nirvana.webp"Main image" onerror="this.onerror=null; this.src='clear.png';">
+                <img id="coverart" src="/images/nirvana.webp" alt="Main image" onerror="this.onerror=null; this.src='clear.png';">
                 <h1>Song name</h1>
                 <h2>Artist</h2>
 
             </div>
-            <source id="audio" src="/music/Stuff.ogg" type="audio/ogg">
+            <audio id="audio" src="/music/Stuff.ogg" type="audio/ogg"></audio>
             <div id="playerrange">
                 <input type="range" id="progress" value="0" min="0" max="500">
                 <p></p>
-                <span id="time">0:00</span>
+                <div>
+                    <span id="time">0:00</span>
+                    <span id="duration">0:00</span>
+                </div>
             </div>
             <div id="playercontrol">
                 <button id="backbutton">
@@ -30,5 +33,6 @@
             </div>
         </div>
         <script src="buttonscript.js"></script>
+        <script src="barscript.js"></script>
     </body>
 </html>
