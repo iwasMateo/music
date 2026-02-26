@@ -7,7 +7,7 @@ function switchPlay() {
     if (!audio.paused){
         playbuttonimg.src = "/images/play.png";
         audio.pause()
-    } else if (audio.paused)) {
+    } else if (audio.paused) {
         playbuttonimg.src="/images/pause.png";
         audio.play();
     } else {
